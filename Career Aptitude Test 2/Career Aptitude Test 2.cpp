@@ -1,21 +1,67 @@
-﻿#define _CRT_SECURE_NO_WARNINGS
+﻿
+#define _CRT_SECURE_NO_WARNINGS
 #include <iostream>
 #include <Windows.h>
+#include<string>
+
+
+using namespace std;
+
+int m = 0;//math 이과
+int l = 0;//liberal arts 문과
+int a = 0;//arts 예술
+
+int b = 0;//business 경영학
+int w = 0;//welfare 사회복지학
+
+int n = 0;//natural science 자연과학
+int e = 0;//engineering 기계공학
+
+int answer = 0;
+
+
+int kimhh(string question, char type)
+{
+	while (true)
+	{
+		printf("%s\n", question.c_str());
+		scanf("%d", &answer);
+		if (answer == 1 || answer ==2 || answer == 3 || answer == 4 || answer == 5)
+			break;
+	}
+
+	switch (type)
+	{
+	case 'b': // I, b
+		l = l + (answer - 3);
+		b = b + (answer - 3);
+		break;
+	case 'w': // I, w
+		l = l + (answer - 3);
+		w = w + (answer - 3);
+		break;
+	case 'n': // m, n
+		m = m + (answer - 3);
+		n = n + (answer - 3);
+		break;
+	case 'e': // m, e
+		m = m + (answer - 3);
+		e = e + (answer - 3);
+		break;
+	case 'a': // a
+		a = a + (answer - 3);
+		break;
+	}
+
+	return 0;
+
+}
+
 
 int main()
 {
-	int m = 0;//math 이과
-	int l = 0;//liberal arts 문과
-	int a = 0;//arts 예술
-
-	int b = 0;//business 경영학
-	int w = 0;//welfare 사회복지학
-
-	int n = 0;//natural science 자연과학
-	int e = 0;//engineering 기계공학
-
-	int answer=0;
-
+	
+	
 	printf("본 프로그램은 고등학생의 진로적성검사를 위한 프로그램입니다.\n");
 	Sleep(1000);
 	printf("질문은 총 k개가 있으며 소요시간은 대략 t분 정도입니다.\n");
@@ -27,6 +73,30 @@ int main()
 	Sleep(1000);
 	printf("테스트를 시작니다.\n");
 	Sleep(1000);
+
+	//business
+	kimhh("Q1. 리더십 프로그램 참여하기", b);
+	kimhh("Q2. 경영 위기 관리하기", b);
+	kimhh("Q3. 경영 관련 신문이나 잡지 읽기", b);
+	kimhh("Q4. 직원들의 업무를 관리하고 감독하기", b);
+	kimhh("Q5. 집단의 의견을 대변하고 관철시키기", b);
+	kimhh("Q6. 모의 창업하기", b);
+	kimhh("Q7. 사업 성공을 위한 전략 세우기", b);
+	kimhh("Q8. 모임이나 집단에서 리더 역할하기", b);
+	kimhh("Q9. 기업 경영하기", b);
+
+	//engineering
+	kimhh("Q10. 목재를 사용하여 가구 만들기\n", b);
+	kimhh("Q2. 경영 위기 관리하기\n", b);
+	kimhh("Q3. 경영 관련 신문이나 잡지 읽기\n", b);
+	kimhh("Q4. 직원들의 업무를 관리하고 감독하기\n", b);
+	kimhh("Q5. 집단의 의견을 대변하고 관철시키기\n", b);
+	kimhh("Q6. 모의 창업하기\n", b);
+	kimhh("Q7. 사업 성공을 위한 전략 세우기\n", b);
+	kimhh("Q8. 모임이나 집단에서 리더 역할하기\n", b);
+	kimhh("Q9. 기업 경영하기\n", b);
+
+
 
 	printf("Q1. 리더십 프로그램 참여하기\n");
 	scanf("%d", &answer);
@@ -279,3 +349,4 @@ int main()
 
 	return 0;
 }
+

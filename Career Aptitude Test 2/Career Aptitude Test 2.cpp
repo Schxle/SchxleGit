@@ -86,8 +86,8 @@ int main()
 	kimhh("Q9. 기업 경영하기", b);
 
 	//engineering
-	kimhh("Q10. 목재를 사용하여 가구 만들기\n", b);
-	kimhh("Q2. 경영 위기 관리하기\n", b);
+	kimhh("Q10. 목재를 사용하여 가구 만들기", b);
+	kimhh("Q11. 새로 산 기계의 사용설명서 읽기", b);
 	kimhh("Q3. 경영 관련 신문이나 잡지 읽기\n", b);
 	kimhh("Q4. 직원들의 업무를 관리하고 감독하기\n", b);
 	kimhh("Q5. 집단의 의견을 대변하고 관철시키기\n", b);
@@ -95,57 +95,6 @@ int main()
 	kimhh("Q7. 사업 성공을 위한 전략 세우기\n", b);
 	kimhh("Q8. 모임이나 집단에서 리더 역할하기\n", b);
 	kimhh("Q9. 기업 경영하기\n", b);
-
-
-
-	printf("Q1. 리더십 프로그램 참여하기\n");
-	scanf("%d", &answer);
-	l =l + (answer - 3);
-	b = b + (answer - 3);
-
-	printf("Q2. 경영 위기 관리하기\n");
-	scanf("%d", &answer);
-	l = l + (answer - 3);
-	b = b + (answer - 3);
-
-	printf("Q3. 경영 관련 신문이나 잡지 읽기\n");
-	scanf("%d", &answer);
-	l = l + (answer - 3);
-	b = b + (answer - 3);
-
-	printf("Q4. 직원들의 업무를 관리하고 감독하기\n");
-	scanf("%d", &answer);
-	l = l + (answer - 3);
-	b = b + (answer - 3);
-
-	printf("Q5. 집단의 의견을 대변하고 관철시키기\n");
-	scanf("%d", &answer);
-	l = l + (answer - 3);
-	b = b + (answer - 3);
-
-	printf("Q6. 모의 창업하기\n");
-	scanf("%d", &answer);
-	l = l + (answer - 3);
-	b = b + (answer - 3);
-
-	printf("Q7. 사업 성공을 위한 전략 세우기\n");
-	scanf("%d", &answer);
-	l = l + (answer - 3);
-	b = b + (answer - 3);
-
-	printf("Q8. 모임이나 집단에서 리더 역할하기\n");
-	scanf("%d", &answer);
-	l = l + (answer - 3);
-	b = b + (answer - 3);
-
-	printf("Q9. 기업 경영하기\n");
-	scanf("%d", &answer);
-	l = l + (answer - 3);
-	b = b + (answer - 3);
-
-	//까지 business 경영
-
-	//부터 engineering 기계공학
 
 	printf("Q10. 목재를 사용하여 가구 만들기\n");
 	scanf("%d", &answer);

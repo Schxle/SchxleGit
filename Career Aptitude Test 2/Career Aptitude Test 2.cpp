@@ -135,13 +135,6 @@ int main()
 	kimhh("Q44. 자선모금활동 참여하기", 'w');
 	kimhh("Q45. 대인관계 향상 프로그램 참여하기", 'w');
 
-	//문과:이과 백분율 비율
-
-	/*float pm = 100 * m / (m + l); //(m / (m + l)) * 100
-
-	float pl = 100*l / (m + l);
-	*/
-
 	printf("모든 질문이 끝났습니다.\n");
 	Sleep(1000);
 	printf("%d %d", l, m);
@@ -171,26 +164,6 @@ int main()
 		principle = a;
 	}
 
-	/*
-	switch (principle)
-	{
-	case b:
-		printf("경영학과입니다!");
-		break;
-	case w:
-		printf("사회복지학과입니다!");
-		break;
-	case n:
-		printf("자연과학학과입니다!");
-		break;
-	case e:
-		printf("기계공학과입니다!");
-		break;
-	case a:
-		printf("예술학과입니다!");
-		break;
-	}
-	*/
 
 	if (principle == b)
 	{
